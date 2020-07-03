@@ -5,25 +5,35 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.adapter.ProductAdapter;
+
 public class MainActivity extends AppCompatActivity {
-    TextView txtNoiDung;
-    Button btn;
+    private ListView listProduct;
+    String[] maintitle ={
+        "Bản Thiết kế vĩ đại","Ngày xưa có một con bò","Ký sự code dạo"
+    };
+    String[] subtotal ={
+            "Trần Thanh Trung","Nguyễn Văn Tú","Phạm Huy Hoàng"
+    };
+    Integer[] imgid ={
+         R.drawable.btkvd,R.drawable.nxcmcb,R.drawable.kscd
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // ánh xạ
-        txtNoiDung = (TextView) findViewById(R.id.textView);
-        btn = (Button) findViewById(R.id.button);
-        // viết code
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                txtNoiDung.setText("Chào mừng đến với lập trình android ");
-            }
-        });
+
+
+
+        ///
+        ProductAdapter adapter = new ProductAdapter(this, maintitle, subtotal, imgid);
+        listProduct = (ListView) findViewById(R.id.listProduct) ;
+        listProduct.setAdapter(adapter);
+
     }
 }

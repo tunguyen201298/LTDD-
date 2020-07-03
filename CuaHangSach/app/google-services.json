@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "14090017749",
+    "firebase_url": "https://cuahangsach-53ddc.firebaseio.com",
+    "project_id": "cuahangsach-53ddc",
+    "storage_bucket": "cuahangsach-53ddc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14090017749:android:320b4f349589d8ab",
+        "android_client_info": {
+          "package_name": "com.example.cuahangsach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14090017749-6d2qld3pibsu4r70apna3n0jo24mg976.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cuahangsach",
+            "certificate_hash": "354be14441eebe1e5d25410ca428f9ec1036f4e6"
+          }
+        },
+        {
+          "client_id": "14090017749-apeuo501qfsa364cdub546ut3bnicn7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB45gYsp2AnBV2R9xG6Kqh6p9VQZSfxsvc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14090017749-apeuo501qfsa364cdub546ut3bnicn7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
